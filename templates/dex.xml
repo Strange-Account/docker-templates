@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dex</Name>
+  <Repository>dexidp/dex</Repository>
+  <Registry>https://hub.docker.com/r/dexidp/dex/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Strange-Account/docker-templates/issues</Support>
+  <Project>https://dexidp.io/</Project>
+  <Overview> A docker image to run dex</Overview>
+  <Category>Network:Management Tools:</Category>
+  <TemplateURL>https://raw.githubusercontent.com/Strange-Account/docker-templates/main/templates/dex.xml</TemplateURL>
+  <Icon></Icon>
+  <ExtraParams/>
+  <PostArgs></PostArgs>
+  <Config Name="Container port" Target="5556" Default="5556" Mode="tcp" Description="Container Port: 5556" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Host path" Target="/etc/dex/" Default="/mnt/user/appdata/dex" Mode="rw" Description="Dex config files" Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>
